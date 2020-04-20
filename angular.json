@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "crm"
+    }
+  },
+  "defaultProject": "crm",
+  "cli": {
+    "analytics": "2ebbc59b-a95a-4848-9278-dcdb8f66bfdf"
+  }
 }
