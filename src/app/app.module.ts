@@ -14,9 +14,9 @@ import { UiModule } from './ui/ui.module';
   ],
   imports: [
     BrowserModule,
+    LoginModule,
     AppRoutingModule,
     UiModule,
-    LoginModule,
     CoreModule,
     NgbModule
   ],
