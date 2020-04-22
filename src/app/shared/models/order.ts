@@ -16,9 +16,12 @@ export class Order implements OrderI {
     }
   }
   totalHt(): number {
+    console.log('TOTAL HT CALLED');
+
     return this.tjmHt * this.nbJours;
   }
   totalTtc(): number {
+    console.log('TOTAL TTC CALLED');
     if (this.tva <= 0) {
       return this.totalHt();
     }
