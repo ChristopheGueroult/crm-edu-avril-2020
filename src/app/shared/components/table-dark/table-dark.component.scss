@@ -1,0 +1,13 @@
+@import 'theme';
+
+#table-dark {
+  .state-annule {
+    background: $color-error;
+  }
+  .state-confirme {
+    background: $color-success;
+  }
+  .state-option {
+    background: $color1;
+  }
+}
