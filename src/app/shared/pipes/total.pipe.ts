@@ -5,8 +5,11 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class TotalPipe implements PipeTransform {
 
-  transform(value: any, ...args: any[]): number {
+  transform(value: any, args?: any): number {
     if (value) {
+      if (args) {
+        return value.totalTtc();
+      }
       return value.totalHt();
     }
     return null;
