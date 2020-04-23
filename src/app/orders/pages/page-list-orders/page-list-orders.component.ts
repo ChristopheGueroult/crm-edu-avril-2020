@@ -13,6 +13,8 @@ export class PageListOrdersComponent implements OnInit {
   // public collection: Order[];
   public collection$: Observable<Order[]>;
   public headers: string[];
+  public title: string;
+  public subtitle: string;
   public states = Object.values(StatesOrder);
   constructor(private os: OrdersService) { }
 
@@ -21,6 +23,8 @@ export class PageListOrdersComponent implements OnInit {
     //   this.collection = datas;
     // });
     this.collection$ = this.os.collection;
+    this.title = 'Orders';
+    this.subtitle = 'All orders';
     this.headers = [
       'Type',
       'Client',

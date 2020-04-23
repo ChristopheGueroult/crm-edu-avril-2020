@@ -9,6 +9,22 @@
     background: $color-success;
   }
   .state-option {
-    background: $color2;
+    background: $color3;
+  }
+}
+
+app-template-a {
+  #table-light {
+    .state-option {
+      background: $color2;
+    }
+  }
+}
+
+app-template-b {
+  #table-light {
+    .state-option {
+      background: $color1;
+    }
   }
 }

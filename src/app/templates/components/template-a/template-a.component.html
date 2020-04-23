@@ -1,0 +1,6 @@
+<div [ngClass]="{'orange': color === 'orange'}">
+  <h1 *ngIf="title">{{ title }}</h1>
+  <h2 *ngIf="subtitle">{{ subtitle }}</h2>
+</div>
+
+<ng-content></ng-content>
