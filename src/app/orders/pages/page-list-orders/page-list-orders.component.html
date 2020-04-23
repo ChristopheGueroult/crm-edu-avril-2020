@@ -18,5 +18,9 @@
 
   </app-table-light>
 
+  <app-btn [label]="btnRoute.label" [route]="btnRoute.route"></app-btn>
+  <app-btn [label]="btnHref.label" [href]="btnHref.href"></app-btn>
+  <app-btn [label]="btnAction.label" [action]="btnAction.action" (clicked)="action()"></app-btn>
+
 </app-template-a>
 
