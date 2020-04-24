@@ -4,7 +4,7 @@ import { OrdersService } from '../../services/orders.service';
 import { Observable, Subject } from 'rxjs';
 import { StatesOrder } from 'src/app/shared/enums/states-order.enum';
 import { Btn } from 'src/app/shared/interfaces/btn';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-page-list-orders',
@@ -23,7 +23,8 @@ export class PageListOrdersComponent implements OnInit {
   public states = Object.values(StatesOrder);
   constructor(
     private os: OrdersService,
-    private route: ActivatedRoute
+    private route: ActivatedRoute,
+    private router: Router
   ) { }
 
   ngOnInit(): void {
@@ -66,6 +67,14 @@ export class PageListOrdersComponent implements OnInit {
       });
 
     });
+  }
+
+  public edit(item: Order) {
+    this.router.navigate(['orders', 'edit', item.id]);
+  }
+
+  public detail(item: Order) {
+    this.os.firstOrder$.next(item);
   }
 
 }
