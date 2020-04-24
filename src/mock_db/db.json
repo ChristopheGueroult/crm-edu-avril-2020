@@ -29,46 +29,6 @@
       "client": "Edugroupe",
       "comment": "merci edugroupe",
       "id": 3
-    },
-    {
-      "id": 4,
-      "typePresta": "gfbcvb",
-      "client": "gfhfdhg",
-      "tjmHt": 1200,
-      "nbJours": 1,
-      "tva": 20,
-      "state": "Option",
-      "comment": "dsggfd"
-    },
-    {
-      "id": 5,
-      "typePresta": "a",
-      "client": "aa",
-      "tjmHt": 1200,
-      "nbJours": 1,
-      "tva": 20,
-      "state": "Option",
-      "comment": null
-    },
-    {
-      "id": 6,
-      "typePresta": "a",
-      "client": "aa",
-      "tjmHt": 1200,
-      "nbJours": 1,
-      "tva": 20,
-      "state": "Option",
-      "comment": null
-    },
-    {
-      "id": 7,
-      "typePresta": "coaching",
-      "client": "Veolia",
-      "tjmHt": 1200,
-      "nbJours": 1,
-      "tva": 20,
-      "state": "Option",
-      "comment": "test commentaire pour veolia"
     }
   ],
   "clients": [

@@ -14,6 +14,9 @@
           <option *ngFor="let state of states" [value]="state" [selected]="state === item.state">{{ state }}</option>
         </select>
       </td>
+      <td>
+        <app-delete (click)="delete(item)"></app-delete>
+      </td>
     </tr>
 
   </app-table-light>
